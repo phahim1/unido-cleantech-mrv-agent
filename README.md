@@ -414,6 +414,59 @@ Translate technical and engineering outputs into decision-support indicators.
 
 The objective is to provide a traceable pathway from industrial measurements to energy and climate-impact reporting.
 
+
+---
+
+## Field Use Cases & Programmatic Verification
+
+### Use Case 1: Industrial MSME Decarbonization (GEF Core Indicator 6.2)
+
+![Industrial MSME Decarbonization Dashboard](docs/images/use_case_1_mitigation.png)
+
+**Operational Scenario & Mechanics**
+Monitors an industrial motor retrofit utilizing a Variable Frequency Drive (VFD) under ISO 50001 and IEC 60204 standards. The engine ingests baseline vs. active electrical telemetry ($kWh$, Power Factor, $kW$) to calculate net avoided emissions ($\Delta E_{\text{total}}$) and direct global warming potential reductions from refrigerant management.
+
+**Key UNIDO Benefits & Strategic Alignment**
+* **Programmatic Impact:** Directly aligns with UNIDO MTPF priorities for clean industrial transitions and the Global Cleantech Innovation Programme (GCIP).
+* **Climate Finance Readiness:** Automatically generates audit-ready data for **GEF Core Indicator 6.2** ($tCO_2e$ avoided), accelerating disbursement approvals from multilateral funds (GEF/GCF/ASIF).
+* **MSME Scalability:** Provides small-to-medium enterprises with transparent, automated dMRV without requiring expensive on-site third-party auditing infrastructure.
+
+---
+
+### Use Case 2: Extreme Thermal Stress & Asset Derating (Climate Adaptation)
+
+![Thermal Adaptation Risk Panel](docs/images/use_case_2_adaptation.png)
+
+![Thermal Adaptation Risk Panel](docs/images/use_case_2_adaptations.png)
+
+
+**Operational Scenario & Mechanics**
+Evaluates industrial equipment performance under severe heat stress ($T_{\text{ambient}} > 40^\circ\text{C}$). Utilizing thermal derating ($\alpha$) and exponential failure risk models ($A_{\text{risk}}$), the agent quantifies efficiency losses and Mean Time Between Failures (MTBF) degradation in real time.
+
+
+**Key UNIDO Benefits & Strategic Alignment**
+* **Programmatic Impact:** Operationalizes Climate Technology Centre and Network (CTCN) adaptation frameworks by embedding climate resilience into industrial energy management.
+* **Risk Mitigation:** Offers early-warning diagnostic indicators to prevent catastrophic equipment failures and unplanned production downtime in high-temperature target regions.
+* **Capital Protection:** Informs targeted capital expenditure and preventative maintenance scheduling to extend asset lifespans under shifting climate baselines.
+
+---
+
+### Use Case 3: ISO/IEC 17025 Compliant IoT Telemetry Ingestion Gateway
+
+![FastAPI Swagger Ingestion API](docs/images/use_case_3_api_gateway.png)
+
+![FastAPI Swagger Ingestion API](docs/images/use_case_3_api_gateways.png)
+
+
+**Operational Scenario & Mechanics**
+Demonstrates an asynchronous REST API built on FastAPI that ingests raw three-phase electrical telemetry ($V$, $I$, $\text{PF}$, $T_{\text{ambient}}$) directly from edge IoT meters. The gateway validates telemetry against strict schema rules before routing payloads to specialized dMRV analytical agents.
+
+**Key UNIDO Benefits & Strategic Alignment**
+* **Programmatic Impact:** Delivers a digital-first, standards-compliant dMRV architecture capable of managing multi-country pilot project portfolios concurrently.
+* **Data Provenance & Trust:** Enforces ISO/IEC 17025 data integrity and calibration controls to eliminate manual reporting bias and greenwashing risks.
+* **Interoperability:** Connects edge hardware directly with UNIDO central reporting dashboards via open-source OpenAPI specifications.
+
+
 ---
 
 # Future Roadmap
